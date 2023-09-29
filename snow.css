@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #6d94a4;
+  overflow: hidden;
+  position: relative;
+}
+
+.snowflakes {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.snowflake {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.snowman {
+  position: absolute;
+  bottom: 26%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.snowman-head,
+.snowman-nose,
+.snowman-smile,
+.snowman-hat,
+.hat-top,
+.hat-bottom,
+.snowman-mid {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.snowman-head {
+  width: 120px;
+  height: 120px;
+  top: 30px;
+  left: 50px;
+}
+
+.snowman-nose {
+  width: 20px;
+  height: 20px;
+  background-color: #ff6600;
+  border-radius: 50%;
+  top: 80px;
+  left: 95px;
+}
+
+.snowman-smile {
+  width: 80px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 70px;
+}
+
+.snowman-hat {
+  width: 120px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+.hat-top {
+  width: 80px;
+  height: 50px;
+  background-color: #000;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+
+.snowman-mid {
+  width: 180px;
+  height: 180px;
+  top: 150px;
+  left: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
